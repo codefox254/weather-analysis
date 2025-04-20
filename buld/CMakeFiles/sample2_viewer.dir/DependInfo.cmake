@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dev/Projects/weather-analysis/src/WeatherExporter.cpp" "CMakeFiles/sample2_viewer.dir/src/WeatherExporter.cpp.o" "gcc" "CMakeFiles/sample2_viewer.dir/src/WeatherExporter.cpp.o.d"
   "/home/dev/Projects/weather-analysis/src/WeatherRecord.cpp" "CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.o" "gcc" "CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.o.d"
+  "/home/dev/Projects/weather-analysis/src/WeatherTrendDetection.cpp" "CMakeFiles/sample2_viewer.dir/src/WeatherTrendDetection.cpp.o" "gcc" "CMakeFiles/sample2_viewer.dir/src/WeatherTrendDetection.cpp.o.d"
   "/home/dev/Projects/weather-analysis/tests/sample2_viewer.cpp" "CMakeFiles/sample2_viewer.dir/tests/sample2_viewer.cpp.o" "gcc" "CMakeFiles/sample2_viewer.dir/tests/sample2_viewer.cpp.o.d"
   )
 

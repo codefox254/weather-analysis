@@ -5,13 +5,17 @@ set(CMAKE_CXX_STANDARD 17)
 
 # ==== Include Directories ====
 include_directories(include)
+include_directories(includes)  # 👈 Include ImGui & ImPlot
 
 # ==== Source Files ====
-file(GLOB SOURCES "src/*.cpp")
+file(GLOB SOURCES 
+    "src/*.cpp"
+    "includes/*.cpp"  # 👈 Grab ImGui + ImPlot source files
+)
 
 # ==== Main Executable ====
 add_executable(weather_analysis ${SOURCES})
-target_include_directories(weather_analysis PRIVATE include)
+target_include_directories(weather_analysis PRIVATE include includes)
 
 # ==== Test Executable: test_weather ====
 if(EXISTS "${CMAKE_SOURCE_DIR}/tests/test_weather.cpp")
@@ -19,6 +23,7 @@ if(EXISTS "${CMAKE_SOURCE_DIR}/tests/test_weather.cpp")
         tests/test_weather.cpp
         src/WeatherRecord.cpp
         src/WeatherExporter.cpp
+        src/WeatherTrendDetection.cpp
     )
     target_include_directories(test_weather PRIVATE include)
 endif()
@@ -29,15 +34,17 @@ if(EXISTS "${CMAKE_SOURCE_DIR}/tests/sample2_viewer.cpp")
         tests/sample2_viewer.cpp
         src/WeatherRecord.cpp
         src/WeatherExporter.cpp
+        src/WeatherTrendDetection.cpp
     )
     target_include_directories(sample2_viewer PRIVATE include)
 endif()
 
-# Test: test_exporter
+# ==== Test: test_exporter ====
 if(EXISTS "${CMAKE_SOURCE_DIR}/tests/test_exporter.cpp")
     add_executable(test_exporter 
         tests/test_exporter.cpp 
         src/WeatherExporter.cpp 
-        src/WeatherRecord.cpp)
+        src/WeatherRecord.cpp
+        src/WeatherTrendDetection.cpp)
     target_include_directories(test_exporter PRIVATE include)
 endif()

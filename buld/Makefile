@@ -168,6 +168,54 @@ test_exporter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/build
 .PHONY : test_exporter/fast
 
+src/GraphASCII.o: src/GraphASCII.cpp.o
+.PHONY : src/GraphASCII.o
+
+# target to build an object file
+src/GraphASCII.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/GraphASCII.cpp.o
+.PHONY : src/GraphASCII.cpp.o
+
+src/GraphASCII.i: src/GraphASCII.cpp.i
+.PHONY : src/GraphASCII.i
+
+# target to preprocess a source file
+src/GraphASCII.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/GraphASCII.cpp.i
+.PHONY : src/GraphASCII.cpp.i
+
+src/GraphASCII.s: src/GraphASCII.cpp.s
+.PHONY : src/GraphASCII.s
+
+# target to generate assembly for a file
+src/GraphASCII.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/GraphASCII.cpp.s
+.PHONY : src/GraphASCII.cpp.s
+
+src/GraphImPlot.o: src/GraphImPlot.cpp.o
+.PHONY : src/GraphImPlot.o
+
+# target to build an object file
+src/GraphImPlot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/GraphImPlot.cpp.o
+.PHONY : src/GraphImPlot.cpp.o
+
+src/GraphImPlot.i: src/GraphImPlot.cpp.i
+.PHONY : src/GraphImPlot.i
+
+# target to preprocess a source file
+src/GraphImPlot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/GraphImPlot.cpp.i
+.PHONY : src/GraphImPlot.cpp.i
+
+src/GraphImPlot.s: src/GraphImPlot.cpp.s
+.PHONY : src/GraphImPlot.s
+
+# target to generate assembly for a file
+src/GraphImPlot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/GraphImPlot.cpp.s
+.PHONY : src/GraphImPlot.cpp.s
+
 src/WeatherExporter.o: src/WeatherExporter.cpp.o
 .PHONY : src/WeatherExporter.o
 
@@ -233,6 +281,39 @@ src/WeatherRecord.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherRecord.cpp.s
 .PHONY : src/WeatherRecord.cpp.s
+
+src/WeatherTrendDetection.o: src/WeatherTrendDetection.cpp.o
+.PHONY : src/WeatherTrendDetection.o
+
+# target to build an object file
+src/WeatherTrendDetection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherTrendDetection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherTrendDetection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherTrendDetection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherTrendDetection.cpp.o
+.PHONY : src/WeatherTrendDetection.cpp.o
+
+src/WeatherTrendDetection.i: src/WeatherTrendDetection.cpp.i
+.PHONY : src/WeatherTrendDetection.i
+
+# target to preprocess a source file
+src/WeatherTrendDetection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherTrendDetection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherTrendDetection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherTrendDetection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherTrendDetection.cpp.i
+.PHONY : src/WeatherTrendDetection.cpp.i
+
+src/WeatherTrendDetection.s: src/WeatherTrendDetection.cpp.s
+.PHONY : src/WeatherTrendDetection.s
+
+# target to generate assembly for a file
+src/WeatherTrendDetection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherTrendDetection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherTrendDetection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherTrendDetection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherTrendDetection.cpp.s
+.PHONY : src/WeatherTrendDetection.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -342,12 +423,21 @@ help:
 	@echo "... test_exporter"
 	@echo "... test_weather"
 	@echo "... weather_analysis"
+	@echo "... src/GraphASCII.o"
+	@echo "... src/GraphASCII.i"
+	@echo "... src/GraphASCII.s"
+	@echo "... src/GraphImPlot.o"
+	@echo "... src/GraphImPlot.i"
+	@echo "... src/GraphImPlot.s"
 	@echo "... src/WeatherExporter.o"
 	@echo "... src/WeatherExporter.i"
 	@echo "... src/WeatherExporter.s"
 	@echo "... src/WeatherRecord.o"
 	@echo "... src/WeatherRecord.i"
 	@echo "... src/WeatherRecord.s"
+	@echo "... src/WeatherTrendDetection.o"
+	@echo "... src/WeatherTrendDetection.i"
+	@echo "... src/WeatherTrendDetection.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

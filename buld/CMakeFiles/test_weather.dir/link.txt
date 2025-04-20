@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test_weather.dir/tests/test_weather.cpp.o CMakeFiles/test_weather.dir/src/WeatherRecord.cpp.o CMakeFiles/test_weather.dir/src/WeatherExporter.cpp.o -o test_weather 
+/usr/bin/c++ CMakeFiles/test_weather.dir/tests/test_weather.cpp.o CMakeFiles/test_weather.dir/src/WeatherRecord.cpp.o CMakeFiles/test_weather.dir/src/WeatherExporter.cpp.o CMakeFiles/test_weather.dir/src/WeatherTrendDetection.cpp.o -o test_weather 

@@ -10,6 +10,7 @@ public:
     void exportToTxt(const std::vector<WeatherRecord>& records, const std::string& filename);
     void exportToCsv(const std::vector<WeatherRecord>& records, const std::string& filename);
     void displaySummary(const std::vector<WeatherRecord>& records);
+    void exportTrendToTxt(const std::string& trendSummary, const std::string& filename);
 };
 
 #endif // WEATHER_EXPORTER_H

@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/dev/Projects/weather-analysis/src/GraphASCII.cpp" "CMakeFiles/weather_analysis.dir/src/GraphASCII.cpp.o" "gcc" "CMakeFiles/weather_analysis.dir/src/GraphASCII.cpp.o.d"
+  "/home/dev/Projects/weather-analysis/src/GraphImPlot.cpp" "CMakeFiles/weather_analysis.dir/src/GraphImPlot.cpp.o" "gcc" "CMakeFiles/weather_analysis.dir/src/GraphImPlot.cpp.o.d"
   "/home/dev/Projects/weather-analysis/src/WeatherExporter.cpp" "CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o" "gcc" "CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o.d"
   "/home/dev/Projects/weather-analysis/src/WeatherRecord.cpp" "CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o" "gcc" "CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o.d"
+  "/home/dev/Projects/weather-analysis/src/WeatherTrendDetection.cpp" "CMakeFiles/weather_analysis.dir/src/WeatherTrendDetection.cpp.o" "gcc" "CMakeFiles/weather_analysis.dir/src/WeatherTrendDetection.cpp.o.d"
   "/home/dev/Projects/weather-analysis/src/main.cpp" "CMakeFiles/weather_analysis.dir/src/main.cpp.o" "gcc" "CMakeFiles/weather_analysis.dir/src/main.cpp.o.d"
   )
 

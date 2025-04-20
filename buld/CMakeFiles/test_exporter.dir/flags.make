@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dev/Projects/weather-analysis/include
+CXX_INCLUDES = -I/home/dev/Projects/weather-analysis/include -I/home/dev/Projects/weather-analysis/includes
 
 CXX_FLAGS = -std=gnu++17
 

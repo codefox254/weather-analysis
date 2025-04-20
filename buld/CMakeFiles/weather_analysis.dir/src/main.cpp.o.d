@@ -161,4 +161,6 @@ CMakeFiles/weather_analysis.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/vector.tcc \
  /home/dev/Projects/weather-analysis/include/WeatherRecord.h \
  /home/dev/Projects/weather-analysis/include/WeatherExporter.h \
- /home/dev/Projects/weather-analysis/include/WeatherRecord.h
+ /home/dev/Projects/weather-analysis/include/WeatherRecord.h \
+ /home/dev/Projects/weather-analysis/include/WeatherTrendDetection.h \
+ /home/dev/Projects/weather-analysis/include/GraphASCII.h

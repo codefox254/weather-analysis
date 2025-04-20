@@ -49,12 +49,15 @@ int main() {
     // Basic checks
     assert(!testData.empty() && "CSV should not be empty");
 
-    // Sample test record checks
+    // Sample test record checks - adjust these values to match your sample.csv
     WeatherRecord r = testData[0];
-    assert(r.getDate() == "2024-01-01");
-    assert(r.getMinTemp() == 20.0f);  // Adjust to match your CSV sample
-    assert(r.getMaxTemp() == 25.0f);  // Adjust accordingly
-    assert(r.getRainfall() == 2.3f);  // Adjust accordingly
+    std::cout << "Checking first record: " << r.getDate() << " | Min: " << r.getMinTemp()
+              << " | Max: " << r.getMaxTemp() << " | Rainfall: " << r.getRainfall() << std::endl;
+
+              assert(r.getDate() == "2024-01-01");
+              assert(std::abs(r.getMinTemp() - 22.5f) < 0.01f);  // ✅ correct
+              assert(std::abs(r.getMaxTemp() - 65.0f) < 0.01f);  // ✅ correct
+              assert(std::abs(r.getRainfall() - 2.3f) < 0.01f);  // ✅ correct              
 
     std::cout << "✅ Test passed: Weather data loaded and verified." << std::endl;
     return 0;

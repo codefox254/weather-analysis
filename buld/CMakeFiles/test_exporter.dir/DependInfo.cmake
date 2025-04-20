@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dev/Projects/weather-analysis/src/WeatherExporter.cpp" "CMakeFiles/test_exporter.dir/src/WeatherExporter.cpp.o" "gcc" "CMakeFiles/test_exporter.dir/src/WeatherExporter.cpp.o.d"
   "/home/dev/Projects/weather-analysis/src/WeatherRecord.cpp" "CMakeFiles/test_exporter.dir/src/WeatherRecord.cpp.o" "gcc" "CMakeFiles/test_exporter.dir/src/WeatherRecord.cpp.o.d"
+  "/home/dev/Projects/weather-analysis/src/WeatherTrendDetection.cpp" "CMakeFiles/test_exporter.dir/src/WeatherTrendDetection.cpp.o" "gcc" "CMakeFiles/test_exporter.dir/src/WeatherTrendDetection.cpp.o.d"
   "/home/dev/Projects/weather-analysis/tests/test_exporter.cpp" "CMakeFiles/test_exporter.dir/tests/test_exporter.cpp.o" "gcc" "CMakeFiles/test_exporter.dir/tests/test_exporter.cpp.o.d"
   )
 

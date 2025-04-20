@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test_weather.dir/src/WeatherExporter.cpp.o.d"
   "CMakeFiles/test_weather.dir/src/WeatherRecord.cpp.o"
   "CMakeFiles/test_weather.dir/src/WeatherRecord.cpp.o.d"
+  "CMakeFiles/test_weather.dir/src/WeatherTrendDetection.cpp.o"
+  "CMakeFiles/test_weather.dir/src/WeatherTrendDetection.cpp.o.d"
   "CMakeFiles/test_weather.dir/tests/test_weather.cpp.o"
   "CMakeFiles/test_weather.dir/tests/test_weather.cpp.o.d"
   "test_weather"
