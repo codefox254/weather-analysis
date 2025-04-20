@@ -69,10 +69,24 @@ include CMakeFiles/weather_analysis.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/weather_analysis.dir/flags.make
 
+CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o: CMakeFiles/weather_analysis.dir/flags.make
+CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o: /home/dev/Projects/weather-analysis/src/WeatherExporter.cpp
+CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o: CMakeFiles/weather_analysis.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/weather-analysis/buld/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o -MF CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o.d -o CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o -c /home/dev/Projects/weather-analysis/src/WeatherExporter.cpp
+
+CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/Projects/weather-analysis/src/WeatherExporter.cpp > CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.i
+
+CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/Projects/weather-analysis/src/WeatherExporter.cpp -o CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.s
+
 CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o: CMakeFiles/weather_analysis.dir/flags.make
 CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o: /home/dev/Projects/weather-analysis/src/WeatherRecord.cpp
 CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o: CMakeFiles/weather_analysis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/weather-analysis/buld/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/weather-analysis/buld/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o -MF CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o.d -o CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o -c /home/dev/Projects/weather-analysis/src/WeatherRecord.cpp
 
 CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.s: cmake_force
 CMakeFiles/weather_analysis.dir/src/main.cpp.o: CMakeFiles/weather_analysis.dir/flags.make
 CMakeFiles/weather_analysis.dir/src/main.cpp.o: /home/dev/Projects/weather-analysis/src/main.cpp
 CMakeFiles/weather_analysis.dir/src/main.cpp.o: CMakeFiles/weather_analysis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/weather-analysis/buld/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/weather_analysis.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/weather-analysis/buld/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/weather_analysis.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_analysis.dir/src/main.cpp.o -MF CMakeFiles/weather_analysis.dir/src/main.cpp.o.d -o CMakeFiles/weather_analysis.dir/src/main.cpp.o -c /home/dev/Projects/weather-analysis/src/main.cpp
 
 CMakeFiles/weather_analysis.dir/src/main.cpp.i: cmake_force
@@ -99,17 +113,19 @@ CMakeFiles/weather_analysis.dir/src/main.cpp.s: cmake_force
 
 # Object files for target weather_analysis
 weather_analysis_OBJECTS = \
+"CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o" \
 "CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o" \
 "CMakeFiles/weather_analysis.dir/src/main.cpp.o"
 
 # External object files for target weather_analysis
 weather_analysis_EXTERNAL_OBJECTS =
 
+weather_analysis: CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o
 weather_analysis: CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o
 weather_analysis: CMakeFiles/weather_analysis.dir/src/main.cpp.o
 weather_analysis: CMakeFiles/weather_analysis.dir/build.make
 weather_analysis: CMakeFiles/weather_analysis.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Projects/weather-analysis/buld/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable weather_analysis"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Projects/weather-analysis/buld/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable weather_analysis"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/weather_analysis.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

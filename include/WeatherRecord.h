@@ -1,4 +1,3 @@
-// include/WeatherRecord.h
 #ifndef WEATHER_RECORD_H
 #define WEATHER_RECORD_H
 
@@ -7,20 +6,19 @@
 class WeatherRecord {
 private:
     std::string date;
-    double temperature;
-    double humidity;
-    double rainfall;
+    float minTemp;
+    float maxTemp;
+    float rainfall;
 
 public:
-    WeatherRecord(const std::string& date, double temp, double hum, double rain);
+    WeatherRecord(const std::string& date, float minT, float maxT, float rain);
 
-    // Getters
     std::string getDate() const;
-    double getTemperature() const;
-    double getHumidity() const;
-    double getRainfall() const;
+    float getMinTemp() const;
+    float getMaxTemp() const;
+    float getRainfall() const;
 
     void display() const;
 };
 
-#endif
+#endif // WEATHER_RECORD_H

@@ -20,19 +20,19 @@ std::vector<WeatherRecord> loadCSV(const std::string& path) {
 
     while (std::getline(file, line)) {
         std::stringstream ss(line);
-        std::string date, tempStr, humStr, rainStr;
+        std::string date, minStr, maxStr, rainStr;
 
         std::getline(ss, date, ',');
-        std::getline(ss, tempStr, ',');
-        std::getline(ss, humStr, ',');
+        std::getline(ss, minStr, ',');
+        std::getline(ss, maxStr, ',');
         std::getline(ss, rainStr, ',');
 
         try {
-            double temp = std::stod(tempStr);
-            double hum = std::stod(humStr);
-            double rain = std::stod(rainStr);
+            float minT = std::stof(minStr);
+            float maxT = std::stof(maxStr);
+            float rain = std::stof(rainStr);
 
-            records.emplace_back(date, temp, hum, rain);
+            records.emplace_back(date, minT, maxT, rain);
         } catch (...) {
             std::cerr << "⚠️ Skipping invalid row: " << line << std::endl;
         }
@@ -52,9 +52,9 @@ int main() {
     // Sample test record checks
     WeatherRecord r = testData[0];
     assert(r.getDate() == "2024-01-01");
-    assert(r.getTemperature() == 22.5);
-    assert(r.getHumidity() == 65);
-    assert(r.getRainfall() == 2.3);
+    assert(r.getMinTemp() == 20.0f);  // Adjust to match your CSV sample
+    assert(r.getMaxTemp() == 25.0f);  // Adjust accordingly
+    assert(r.getRainfall() == 2.3f);  // Adjust accordingly
 
     std::cout << "✅ Test passed: Weather data loaded and verified." << std::endl;
     return 0;

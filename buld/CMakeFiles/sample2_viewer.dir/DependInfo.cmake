@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/dev/Projects/weather-analysis/src/WeatherExporter.cpp" "CMakeFiles/sample2_viewer.dir/src/WeatherExporter.cpp.o" "gcc" "CMakeFiles/sample2_viewer.dir/src/WeatherExporter.cpp.o.d"
+  "/home/dev/Projects/weather-analysis/src/WeatherRecord.cpp" "CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.o" "gcc" "CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.o.d"
   "/home/dev/Projects/weather-analysis/tests/sample2_viewer.cpp" "CMakeFiles/sample2_viewer.dir/tests/sample2_viewer.cpp.o" "gcc" "CMakeFiles/sample2_viewer.dir/tests/sample2_viewer.cpp.o.d"
   )
 

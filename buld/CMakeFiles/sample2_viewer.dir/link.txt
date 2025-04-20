@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/sample2_viewer.dir/tests/sample2_viewer.cpp.o -o sample2_viewer 
+/usr/bin/c++ CMakeFiles/sample2_viewer.dir/tests/sample2_viewer.cpp.o CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.o CMakeFiles/sample2_viewer.dir/src/WeatherExporter.cpp.o -o sample2_viewer 

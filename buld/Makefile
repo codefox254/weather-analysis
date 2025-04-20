@@ -155,6 +155,52 @@ sample2_viewer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/build
 .PHONY : sample2_viewer/fast
 
+#=============================================================================
+# Target rules for targets named test_exporter
+
+# Build rule for target.
+test_exporter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_exporter
+.PHONY : test_exporter
+
+# fast build rule for target.
+test_exporter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/build
+.PHONY : test_exporter/fast
+
+src/WeatherExporter.o: src/WeatherExporter.cpp.o
+.PHONY : src/WeatherExporter.o
+
+# target to build an object file
+src/WeatherExporter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherExporter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherExporter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherExporter.cpp.o
+.PHONY : src/WeatherExporter.cpp.o
+
+src/WeatherExporter.i: src/WeatherExporter.cpp.i
+.PHONY : src/WeatherExporter.i
+
+# target to preprocess a source file
+src/WeatherExporter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherExporter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherExporter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherExporter.cpp.i
+.PHONY : src/WeatherExporter.cpp.i
+
+src/WeatherExporter.s: src/WeatherExporter.cpp.s
+.PHONY : src/WeatherExporter.s
+
+# target to generate assembly for a file
+src/WeatherExporter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherExporter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherExporter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherExporter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherExporter.cpp.s
+.PHONY : src/WeatherExporter.cpp.s
+
 src/WeatherRecord.o: src/WeatherRecord.cpp.o
 .PHONY : src/WeatherRecord.o
 
@@ -162,6 +208,8 @@ src/WeatherRecord.o: src/WeatherRecord.cpp.o
 src/WeatherRecord.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherRecord.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherRecord.cpp.o
 .PHONY : src/WeatherRecord.cpp.o
 
 src/WeatherRecord.i: src/WeatherRecord.cpp.i
@@ -171,6 +219,8 @@ src/WeatherRecord.i: src/WeatherRecord.cpp.i
 src/WeatherRecord.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherRecord.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherRecord.cpp.i
 .PHONY : src/WeatherRecord.cpp.i
 
 src/WeatherRecord.s: src/WeatherRecord.cpp.s
@@ -180,6 +230,8 @@ src/WeatherRecord.s: src/WeatherRecord.cpp.s
 src/WeatherRecord.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/weather_analysis.dir/build.make CMakeFiles/weather_analysis.dir/src/WeatherRecord.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_weather.dir/build.make CMakeFiles/test_weather.dir/src/WeatherRecord.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/src/WeatherRecord.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/src/WeatherRecord.cpp.s
 .PHONY : src/WeatherRecord.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -230,6 +282,30 @@ tests/sample2_viewer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample2_viewer.dir/build.make CMakeFiles/sample2_viewer.dir/tests/sample2_viewer.cpp.s
 .PHONY : tests/sample2_viewer.cpp.s
 
+tests/test_exporter.o: tests/test_exporter.cpp.o
+.PHONY : tests/test_exporter.o
+
+# target to build an object file
+tests/test_exporter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/tests/test_exporter.cpp.o
+.PHONY : tests/test_exporter.cpp.o
+
+tests/test_exporter.i: tests/test_exporter.cpp.i
+.PHONY : tests/test_exporter.i
+
+# target to preprocess a source file
+tests/test_exporter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/tests/test_exporter.cpp.i
+.PHONY : tests/test_exporter.cpp.i
+
+tests/test_exporter.s: tests/test_exporter.cpp.s
+.PHONY : tests/test_exporter.s
+
+# target to generate assembly for a file
+tests/test_exporter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exporter.dir/build.make CMakeFiles/test_exporter.dir/tests/test_exporter.cpp.s
+.PHONY : tests/test_exporter.cpp.s
+
 tests/test_weather.o: tests/test_weather.cpp.o
 .PHONY : tests/test_weather.o
 
@@ -263,8 +339,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sample2_viewer"
+	@echo "... test_exporter"
 	@echo "... test_weather"
 	@echo "... weather_analysis"
+	@echo "... src/WeatherExporter.o"
+	@echo "... src/WeatherExporter.i"
+	@echo "... src/WeatherExporter.s"
 	@echo "... src/WeatherRecord.o"
 	@echo "... src/WeatherRecord.i"
 	@echo "... src/WeatherRecord.s"
@@ -274,6 +354,9 @@ help:
 	@echo "... tests/sample2_viewer.o"
 	@echo "... tests/sample2_viewer.i"
 	@echo "... tests/sample2_viewer.s"
+	@echo "... tests/test_exporter.o"
+	@echo "... tests/test_exporter.i"
+	@echo "... tests/test_exporter.s"
 	@echo "... tests/test_weather.o"
 	@echo "... tests/test_weather.i"
 	@echo "... tests/test_weather.s"
