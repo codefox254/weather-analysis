@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -fno-PIE  -no-pie -fPIC CMakeFiles/sample2_viewer.dir/sample2_viewer_autogen/mocs_compilation.cpp.o CMakeFiles/sample2_viewer.dir/tests/sample2_viewer.cpp.o -o sample2_viewer  /usr/lib/x86_64-linux-gnu/libcurl.so 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -fno-PIE  -no-pie -fPIC CMakeFiles/test_weather_api.dir/test_weather_api_autogen/mocs_compilation.cpp.o CMakeFiles/test_weather_api.dir/tests/test_weather_api.cpp.o -o test_weather_api  /usr/lib/x86_64-linux-gnu/libcurl.so 
